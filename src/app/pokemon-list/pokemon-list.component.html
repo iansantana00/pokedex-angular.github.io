@@ -1,0 +1,22 @@
+<img
+src="https://lh3.googleusercontent.com/3TSaKxXGo2wT0lu0AyNUBnkk6wkCC2AzOhJyy3JXIPm-AmZ1k9DSAroWeBUyePswCZSs5lVp3mPF7HzUpY9VPlyOV5eddITONINr3WSqLNLm=e365-w600"
+width="100"
+/>
+<div class="pokemon-list">
+<app-pokemon-card 
+    *ngFor="let pokemon of pokemonService.pokemons; index as i" 
+    [pokemon]="pokemon.name" 
+    [numero]="i + 1"
+></app-pokemon-card> 
+</div>
+<a href="https://www.linkedin.com/in/iansantana00/">
+    Feito em Angular por Ian Santana
+</a>
+<!--importar a lista do component criado para não precisar repetir a estrutra html várias vezes-->
+<!--(let serve para declarar a variável)-->
+<!--Em forma de colchetes [], pokemon pega a var que está em cima-->
+<!--index serve para preparar a ordem/sequência que será pego os pokemons, ordem padrão
+é de 1 em 1, na qual começa sempre pelo 0, index será chamado de i-->
+<!--Criar uma classe (seletor) para estilizar-->
+<!--Dentro do pokemon services há uma lista de pokemons-->
+<!--Pegar nome do objeto pokemon-->
